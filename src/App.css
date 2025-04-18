@@ -1,6 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
-  height: 100vh;
   /* background: linear-gradient(195deg, #ff00c3, #e104d9, #a406c2, #6c08a4, #400986, #1f0968, #0a0749, #050b2b); */
   background: url(./../public/wall.jpg);
 }

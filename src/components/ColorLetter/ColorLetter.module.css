@@ -1,0 +1,68 @@
+.blend_wrapper {
+  background-color: #f9f9f7;
+  width: 680px;
+  height: 1000px;
+  box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 5px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: url('../../../public/paper-texture_v2.png');
+  background-size: cover;
+  background-position: center;
+}
+.blend_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 680px;
+  height: 1000px;
+  overflow: hidden;
+}
+.letter {
+  position: absolute;
+  font-size: 900px;
+  font-weight: bold; /* или screen, overlay, difference и т.д. */
+  mix-blend-mode: difference;
+}
+
+.s1 {
+  color: blue;
+  left: 0px;
+  top: 0;
+}
+
+.s2 {
+  color: yellow;
+  left: 150px;
+  top: 0;
+}
+
+.s3 {
+  color: red;
+  left: -150px;
+  top: 0;
+}
+.paper_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Используем саму текстуру как overlay */
+  background-image: url('../../../public/paper-texture_v2.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+  pointer-events: none;
+  /* Добавляем эффект смешивания */
+  mix-blend-mode: overlay;
+}
