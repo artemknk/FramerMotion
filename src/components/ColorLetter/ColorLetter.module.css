@@ -13,7 +13,7 @@
   align-items: center;
 }
 .container {
-  background-image: url('../../../public/paper-texture_v2.png');
+  background-image: url('/paper-texture_v2.png');
   background-size: cover;
   background-position: center;
 }
@@ -30,39 +30,43 @@
 .letter {
   position: absolute;
   font-size: 900px;
-  font-weight: bold; /* или screen, overlay, difference и т.д. */
-  mix-blend-mode: difference;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  will-change: transform, opacity;
+  filter: blur(1px); /* Лёгкое размытие для смягчения границ */
 }
 
 .s1 {
-  color: blue;
+  color: rgba(0, 255, 51, 0.8); /* Оранжевый */
   left: 0px;
   top: 0;
+  mix-blend-mode: multiply; /* Затемнение */
 }
 
 .s2 {
-  color: yellow;
+  color: rgba(255, 183, 0, 0.8); /* Жёлтый */
   left: 150px;
   top: 0;
+  mix-blend-mode: screen; /* Осветление */
 }
 
 .s3 {
-  color: red;
+  color: rgba(0, 255, 221, 0.8); /* Голубой */
   left: -150px;
   top: 0;
+  mix-blend-mode: overlay; /* Комбинация multiply и screen */
 }
+
 .paper_mask {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  /* Используем саму текстуру как overlay */
-  background-image: url('../../../public/paper-texture_v2.png');
+  background-image: url('/paper-texture_v2.png');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
   pointer-events: none;
-  /* Добавляем эффект смешивания */
   mix-blend-mode: overlay;
 }

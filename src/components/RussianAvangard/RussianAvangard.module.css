@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  background-color: #f9f9f7;
+  box-shadow: 
+    0 0 10px rgba(0, 0, 0, 0.1),
+    0 5px 20px rgba(0, 0, 0, 0.2),
+    inset 0 0 30px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background-image: url('/paper-texture_v2.png');
+  background-size: cover;
+  background-position: center;
+}
+.avangard_container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 680px;
+  height: 1000px;
+  overflow: hidden;
+}
+.avangard_box {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid #000;
+}
+.avangard_triangle {
+  position: absolute;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 600px solid #E9C46A;
+  rotate: 150deg;
+}

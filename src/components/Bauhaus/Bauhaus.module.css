@@ -24,7 +24,7 @@
   border-bottom: 3px solid #000;
 }
 .container {
-  background-image: url('../../../public/paper-texture_v2.png');
+  background-image: url('/paper-texture_v2.png');
   background-size: cover;
   background-position: center;
 }
@@ -103,7 +103,7 @@
   right: 0;
   bottom: 0;
   /* Используем саму текстуру как overlay */
-  background-image: url('../../../public/paper-texture_v2.png');
+  background-image: url('/paper-texture_v2.png');
   background-size: cover;
   background-position: center;
   opacity: 0.2;
